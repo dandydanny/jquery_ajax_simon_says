@@ -4,10 +4,11 @@ $(document).ready(function(){
 
   // Do this when link is clicked
   $("[href]").click(function(event)  {
+  event.preventDefault();
   console.log("button clicked");
 
   //submit ajax request to /color route
-  $.post( "/color", {func: "getCellAndColor"}, function( data ) {
+  $.post( "/color", function( data ) {
       
     console.log ( "Done posting" );
     console.log ( data.cell );
