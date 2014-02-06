@@ -25,5 +25,9 @@ th {
 	color:white;
 	margin:10px auto;
 	display:inline-block;
-	padding:5px;
+	padding:10px 40px;
+ }
+
+a{
+  text-decoration: none;
  }

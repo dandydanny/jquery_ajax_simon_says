@@ -3,13 +3,13 @@ $(document).ready(function(){
   console.log("In document.ready fn");
 
   // Do this when link is clicked
-  $("[href]").click(function(event)  {
+  $("#get_color").click(function(event)  {
   event.preventDefault();
   console.log("button clicked");
 
   //submit ajax request to /color route
   $.post( "/color", function( data ) {
-      
+
     console.log ( "Done posting" );
     console.log ( data.cell );
     console.log ( data.color );
